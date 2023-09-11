@@ -1,6 +1,7 @@
 # conformal_opencl
-![input_point](src/data/input.png)
-![output_point](src/data/output.png)
+<img src="src/data/input.png" width="150">
+<img src="src/data/output.png" width="150">
+
 ## Dependences
 
 Most C programs are written in ISO C. However some of the environmental configuration would be nasty for `clang` when you are compiling OpenCL kernel program. `glibc` is recommended instead. As for the The OpenCL driver, it really depends on the platform you have. You should check your OS instruction for the driver packages needed. In Archlinux they are
