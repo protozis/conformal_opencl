@@ -39,6 +39,7 @@ __kernel void propagate(__global float *pos, __global float *vec,__global float 
 		}
 		if(is_inside(&p[0],&v[0]) == 1){
 			z[addr] =  v[2] - (norm[i*3]*(p[0]-v[0]) + norm[i*3+1]*(p[1]-v[1]))/norm[i*3+2];	
+			return;
 		}
 	}
 }
