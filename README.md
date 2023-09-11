@@ -1,5 +1,6 @@
 # conformal_opencl
 <img src="src/data/input.png" width="150">
+<img src="src/data/input_stl.png" width="150">
 <img src="src/data/output.png" width="150">
 
 ## Dependences
