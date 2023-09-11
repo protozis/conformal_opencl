@@ -1,4 +1,6 @@
 # conformal_opencl
+![input_point](data/input.png)
+![output_point](data/output.png)
 ## Dependences
 
 Most C programs are written in ISO C. However some of the environmental configuration would be nasty for `clang` when you are compiling OpenCL kernel program. `glibc` is recommended instead. As for the The OpenCL driver, it really depends on the platform you have. You should check your OS instruction for the driver packages needed. In Archlinux they are
@@ -43,10 +45,12 @@ gcc -std=c99 -Wall -DUNIX -g -DDBUG -o launcher launcher.c.o conformal.c.o   -lO
 3. Check prefer platform and device with `clinfo -l`
 ```shell
 > clinfo -l
-Platform #0: Intel(R) OpenCL Graphics
- `-- Device #0: Intel(R) UHD Graphics 620
+Platform #0: Intel(R) OpenCL HD Graphics
+ `-- Device #0: Intel(R) UHD Graphics 620 [0x3ea0]
 Platform #1: Intel(R) OpenCL
  `-- Device #0: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+Platform #2: NVIDIA CUDA
+ `-- Device #0: NVIDIA GeForce MX150
  ```
  4. To change platform and device being used, modify `PLATFORM` and `DEVICE` macross in `src/luncher.c` and re-compile.
 ```c
