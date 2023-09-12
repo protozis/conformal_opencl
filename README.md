@@ -17,10 +17,7 @@ Most C programs are written in ISO C. However some of the environmental configur
 	- AMD GPU: `opencl-mesa`
 	- AMD CPU: Not supported anymore.
 
-- Tools (For shell script)
-	- `time`: Linux built-in, GNU version also works.
-	- `gnuplot`: For data analysis and visualization.
-	- `ffmpeg`: For MP4 video generation.
+- Tools
 	- `clinfo`: good for monitoring all possible platform properties of the system.
 
 **Development**
